@@ -1,21 +1,15 @@
-<mat-toolbar class="mat-elevation-z6 navbar" color="primary">
-  <div fxHide.gt-sm fxLayoutAlign="start center">
-    <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span class="title">{{ title }}</span>
+<mat-toolbar class="navbar active mat-elevation-z8">
+  <div class="d-flex align-items-center app-logo" [routerLink]="['/']" fxHide.lt-md>
+    <span class="app-heading pl-1">FORTRESS UI</span>
   </div>
-  <div fxHide.lt-md>
-    <a class="brand" href="https://github.com/ngx-rocket" translate>APP_NAME</a>
-    <button mat-button routerLink="/home" routerLinkActive="active">
-      <mat-icon>home</mat-icon>
-      <span translate>Home</span>
-    </button>
-    <button mat-button routerLink="/about" routerLinkActive="active">
-      <mat-icon>info</mat-icon>
-      <span translate>About</span>
-    </button>
-  </div>
-  <span fxFlex></span>
-  <app-language-selector icon="true"></app-language-selector>
+
+  <button mat-button fxHide.gt-sm (click)="sidenav.toggle()">
+    <span class="pl-1">Menu</span>
+  </button>
 </mat-toolbar>
+<!-- Mobile Menu -->
+<mat-sidenav-container class="opened">
+  <mat-sidenav #sidenav mode="over" class="pt-3">
+    <nav></nav>
+  </mat-sidenav>
+</mat-sidenav-container>

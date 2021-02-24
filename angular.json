@@ -25,6 +25,9 @@
             "aot": true,
             "assets": ["src/favicon.ico", "src/apple-touch-icon.png", "src/robots.txt", "src/assets"],
             "styles": ["src/main.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/styles", "src/theme"]
+            },
             "scripts": []
           },
           "configurations": {
