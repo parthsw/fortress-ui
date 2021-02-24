@@ -1,0 +1,29 @@
+{
+  "generator-ngx-rocket": {
+    "version": "9.1.0",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "appName": "fortress ui",
+      "target": ["web"],
+      "pwa": false,
+      "ui": "material",
+      "layout": "simple",
+      "auth": false,
+      "lazy": true,
+      "angulartics": false,
+      "languages": ["en-US"],
+      "tools": ["prettier", "hads"],
+      "utility": [],
+      "deploy": "none",
+      "projectName": "fortress-ui",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}
